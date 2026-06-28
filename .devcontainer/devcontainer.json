@@ -1,0 +1,4 @@
+{
+  "name": "OpenClaw 24/7",
+  "postStartCommand": "bash .devcontainer/startup.sh"
+}

@@ -1,0 +1,20 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "groq/llama-3.3-70b-versatile",
+        "fallbacks": [
+          "gemini/gemini-1.5-flash",
+          "groq/llama-3.1-8b-instant"
+        ]
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "groq": {
+        "maxTokens": 8192
+      }
+    }
+  }
+}

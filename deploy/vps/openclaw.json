@@ -1,0 +1,26 @@
+{
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "groups": {
+        "*": { "requireMention": true }
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "groq/llama-3.3-70b-versatile",
+        "fallbacks": [
+          "groq/llama-3.1-8b-instant",
+          "google/gemini-flash-latest"
+        ]
+      },
+      "models": {
+        "groq/llama-3.3-70b-versatile": { "params": { "maxTokens": 8192 } },
+        "groq/llama-3.1-8b-instant": { "params": { "maxTokens": 8192 } }
+      }
+    }
+  }
+}
